@@ -17,12 +17,10 @@ import socket
 import functools
 import itertools
 
-
 __version__ = '0.4.1'
 __author__ = 'Yue Du <ifduyue@gmail.com>'
 __url__ = 'https://github.com/ifduyue/pyssdb'
 __license__ = 'BSD 2-Clause License'
-
 
 PY3 = sys.version_info >= (3,)
 
@@ -32,9 +30,11 @@ if PY3:
 else:
     from itertools import izip_longest as zip_longest
 
+
 def utf8(s):
     s = str(s) if isinstance(s, int) else s
     return s.encode('utf8') if isinstance(s, unicode) else s
+
 
 def grouper(iterable, n, fillvalue=None):
     "Collect data into fixed-length chunks or blocks"
@@ -119,17 +119,21 @@ class Connection(object):
                     cmd.endswith('scan') or cmd.endswith('range') or \
                     (cmd.startswith('multi_') and cmd.endswith('get')) or \
                     cmd.endswith('getall'):
+                ret = list(map(lambda x: x.decode('utf-8'), ret))
                 return ret
             elif cmd == 'info':
+                ret = list(map(lambda x: x.decode('utf-8'), ret))
                 return ret[1:]
             elif len(ret) == 1:
                 if cmd.endswith('set') or cmd.endswith('del') or \
                         cmd.endswith('incr') or cmd.endswith('decr') or \
                         cmd.endswith('size') or cmd.endswith('rank') or \
-                        cmd in ('setx', 'zget', 'qtrim_front', 'qtrim_back'):
-                    return int(ret[0])
+                                cmd in ('setx', 'zget', 'qtrim_front', 'qtrim_back'):
+                    value = ret[0].decode('utf-8')
+                    return int(value)
                 else:
-                    return ret[0]
+                    value = ret[0].decode('utf-8')
+                    return value
             elif not ret:
                 return True
             else:
@@ -183,8 +187,8 @@ class ConnectionPool(object):
 
     close = disconnect
 
-def command_post_processing(func):
 
+def command_post_processing(func):
     @functools.wraps(func)
     def wrapper(self, cmd, *args):
 
@@ -196,14 +200,18 @@ def command_post_processing(func):
 
     return wrapper
 
+
 class Client(object):
-    def __init__(self, host='127.0.0.1', port=8888, connection_pool=None,
+    def __init__(self, host='127.0.0.1', port=8888, password=None, connection_pool=None,
                  socket_timeout=None, max_connections=1048576):
+        self.password = password
         if not connection_pool:
             connection_pool = ConnectionPool(host=host, port=port,
                                              socket_timeout=socket_timeout,
                                              max_connections=max_connections)
+
         self.connection_pool = connection_pool
+
         connection = self.connection_pool.new_connection()
         connection.connect()
         self.connection_pool.idle_connections.append(connection)
@@ -212,6 +220,8 @@ class Client(object):
     def execute_command(self, cmd, *args):
         connection = self.connection_pool.get_connection()
         try:
+            if self.password is not None:
+                connection.send('auth', self.password)
             connection.send(cmd, *args)
             data = connection.recv()
         except:
@@ -238,6 +248,7 @@ if __name__ == '__main__':
     print(c.set('key', 'value'))
     print(c.get('key'))
     import string
+
     for i in string.ascii_letters:
         c.incr(i)
     print(c.keys('a', 'z', 1))
