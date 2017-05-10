@@ -220,8 +220,9 @@ class Client(object):
     def execute_command(self, cmd, *args):
         connection = self.connection_pool.get_connection()
         try:
-            if self.password is not None:
+            if self.password:
                 connection.send('auth', self.password)
+                data = connection.recv()
             connection.send(cmd, *args)
             data = connection.recv()
         except:
