@@ -138,6 +138,8 @@ class Connection(object):
                 return True
             else:
                 return ret
+        elif st == 'error':
+            raise error(st, ret[0].decode('utf-8'))
 
         raise error(status, *ret)
 
@@ -221,8 +223,11 @@ class Client(object):
         connection = self.connection_pool.get_connection()
         try:
             if self.password:
-                connection.send('auth', self.password)
-                _ = connection.recv()
+                try:
+                    connection.send('auth', self.password)
+                    _ = connection.recv()
+                except error as e:
+                    return e.reason + ': ' + e.message
             connection.send(cmd, *args)
             data = connection.recv()
         except:
