@@ -222,7 +222,7 @@ class Client(object):
         try:
             if self.password:
                 connection.send('auth', self.password)
-                data = connection.recv()
+                _ = connection.recv()
             connection.send(cmd, *args)
             data = connection.recv()
         except:
