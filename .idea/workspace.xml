@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d601b25-8728-4a8d-8fb8-3dc0c2f7c024" name="Default" comment="">
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/MANIFEST.in" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/README.rst" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/README_fixtures.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/TUTORIAL.rst" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/TUTORIAL_fixtures.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/setup.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/tests/fixtures.py" afterPath="" />
-      <change type="MOVED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/.idea/pyssdb.iml" afterPath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/.idea/pyssdb_customized.iml" />
-      <change type="MOVED" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/tests/__init__.py" afterPath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/README.MD" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/.idea/workspace.xml" afterPath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/pyssdb.py" afterPath="$USER_HOME$/Desktop/kevinskyrover/pyssdb/pyssdb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
     </list>
     <ignored path="pyssdb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,27 +25,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pyssdb.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb_customized/pyssdb.py">
+      <file leaf-file-name="_socket.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/-289921724/_socket.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#205#242#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="863">
+              <caret line="581" column="11" selection-start-line="581" selection-start-column="11" selection-end-line="581" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="README.MD" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb_customized/README.MD">
+        <entry file="file://$PROJECT_DIR$/README.MD">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="437">
-                <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <first_editor relative-caret-position="946">
+                <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -64,12 +51,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_socket.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/-289921724/_socket.py">
+      <file leaf-file-name="ssdb_tools.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ssdb_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13363">
-              <caret line="581" column="11" selection-start-line="581" selection-start-column="11" selection-end-line="581" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,19 +66,19 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Desktop/kevinskyrover/pyssdb" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/kevinskyrover/pyssdb/pyssdb.py" />
-        <option value="$USER_HOME$/Desktop/kevinskyrover/pyssdb/README.rst" />
-        <option value="$USER_HOME$/Desktop/kevinskyrover/pyssdb/README.MD" />
+        <option value="$PROJECT_DIR$/../pyssdb/pyssdb.py" />
+        <option value="$PROJECT_DIR$/../pyssdb/README.rst" />
+        <option value="$PROJECT_DIR$/../pyssdb/README.MD" />
+        <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
     <option name="y" value="23" />
     <option name="width" value="2048" />
     <option name="height" value="1086" />
@@ -120,9 +109,14 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyssdb_customized" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="pyssdb_customized" />
@@ -135,12 +129,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/kevinskyrover/pyssdb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Python.pyssdb">
     <configuration default="false" name="pyssdb" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -150,12 +145,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/kevinskyrover/pyssdb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../pyssdb" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pyssdb" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/kevinskyrover/pyssdb/pyssdb.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pyssdb/pyssdb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -345,7 +340,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="23" width="2048" height="1086" extended-state="0" />
+    <frame x="0" y="23" width="2048" height="1086" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15490873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -375,13 +370,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb_customized/pyssdb.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/-289921724/_socket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#205#242#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyssdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -393,66 +393,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../pyssdb/MANIFEST.in" />
+    <entry file="file://$PROJECT_DIR$/../pyssdb/README_fixtures.py" />
+    <entry file="file://$PROJECT_DIR$/../pyssdb/.travis.yml" />
+    <entry file="file://$PROJECT_DIR$/../pyssdb/README.rst" />
+    <entry file="file://$PROJECT_DIR$/pyssdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/-289921724/_socket.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13363">
+        <state relative-caret-position="863">
           <caret line="581" column="11" selection-start-line="581" selection-start-column="11" selection-end-line="581" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb/MANIFEST.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb/README_fixtures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb/README.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb_customized/README.MD">
+    <entry file="file://$PROJECT_DIR$/README.MD">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="437">
-            <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <first_editor relative-caret-position="946">
+            <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb_customized/pyssdb.py">
+    <entry file="file://$PROJECT_DIR$/ssdb_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#205#242#0" expanded="true" />
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>

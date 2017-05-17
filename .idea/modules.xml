@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Desktop/kevinskyrover/pyssdb_customized/.idea/pyssdb_customized.iml" filepath="$USER_HOME$/Desktop/kevinskyrover/pyssdb_customized/.idea/pyssdb_customized.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pyssdb_customized.iml" filepath="$PROJECT_DIR$/.idea/pyssdb_customized.iml" />
     </modules>
   </component>
 </project>
