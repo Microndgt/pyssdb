@@ -141,6 +141,7 @@ class Connection(object):
         elif st == 'error':
             raise error(st, ret[0].decode('utf-8'))
 
+        ret = list(map(lambda a: str(a, 'utf-8'), ret))
         raise error(status, *ret)
 
 
