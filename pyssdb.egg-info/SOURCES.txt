@@ -1,7 +1,0 @@
-pyssdb.py
-setup.cfg
-setup.py
-pyssdb.egg-info/PKG-INFO
-pyssdb.egg-info/SOURCES.txt
-pyssdb.egg-info/dependency_links.txt
-pyssdb.egg-info/top_level.txt

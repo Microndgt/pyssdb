@@ -12,11 +12,19 @@ pyssdb_customized
 
 1. ssdb客户端
 
-下载到本地,放到本地项目中,在其他模块中引入即可
+- 使用pip安装
+
+`pip install git+https://github.com/Microndgt/pyssdb_customized.git`
+
+之后`from pyssdb import Client`
+
+- 项目引入
+
+下载到本地,将`pyssdb.py`放到本地项目中,在其他模块中引入即可
 
 ```
-from pyssdb_customized import pyssdb
-ssdb = pyssdb.Client(host='localhost', port=8888, password='')
+from pyssdb import Client
+ssdb = Client(host='localhost', port=8888, password='')
 ssdb.hlist('0', 'z', 999)
 ```
 
