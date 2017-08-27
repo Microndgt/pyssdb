@@ -9,7 +9,7 @@ setup(
     author_email=re.sub(r'(^.*<)|(>.*$)', r'', pyssdb.__author__),
     url=pyssdb.__url__,
     description=('A SSDB Client Library for Python.'),
-    long_description=open('README.rst').read(),
+    long_description=open('README.MD').read(),
     license='BSD',
     keywords='ssdb',
     py_modules=['pyssdb'],
