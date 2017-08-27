@@ -65,6 +65,8 @@ class Connection(object):
             return
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            # make it reusable，防止过快建立链接而没有端口可用，即减少TIME_WAIT，端口重用
+            sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             sock.settimeout(self.socket_timeout)
             sock.connect((self.host, self.port))
             self._sock = sock
@@ -265,4 +267,6 @@ if __name__ == '__main__':
     print(c.set('中文', '你好'))
     print(c.get('中文'))
     print(c.info())
+    c.hset("3", 1, 2)
+    c.hclear("3")
     c.disconnect()
