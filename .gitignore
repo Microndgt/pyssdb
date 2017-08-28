@@ -1,5 +1,7 @@
 *~
 *.pyc
 build
+.idea
 dist
 pyssdb.egg-info
+__pycache__/
